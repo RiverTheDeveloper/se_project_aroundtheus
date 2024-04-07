@@ -3,13 +3,24 @@
 @import url(../blocks/profile.css);
 @import url(../blocks/header.css);
 
-.cards {
+.header__logo {
+  border: 1px 0px 0px 0px;
+  border-color: #545454;
+  opacity: 0.7px;
+
+  margin-bottom: 41px;
+}
+
+.card {
   margin-top: 51px;
   font-family: Inter, sans-serif;
   font-size: 24px;
   font-weight: 900;
   line-height: 29.05px;
   text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .cards__list {
@@ -46,9 +57,10 @@
 }
 
 .card__like-button {
-  background: transparent url(../images/like-inactive.svg) center no-repeat;
+  background: transparent url(../images/Vector\ heart.svg) center no-repeat;
   width: 21px;
   height: 18px;
+  border: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -72,10 +84,4 @@
     margin: 0;
     width: 100%;
   }
-}
-
-.block {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
