@@ -1,0 +1,52 @@
+@import url(../vendors/fonts/fonts.css);
+@import url(../blocks/pages.css);
+@import url(../blocks/profile.css);
+@import url(../blocks/header.css);
+
+.cards {
+  margin-top: 51px;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.05px;
+  text-align: left;
+}
+
+.cards__list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 282px);
+  grid-gap: 20px 17px;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 0 0;
+  list-style-type: none;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+}
+
+.card__description {
+  display: flex;
+  background-color: white;
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+}
+
+.card__like-button {
+  background: transparent url(../images/like-inactive.svg) center no-repeat;
+  width: 21px;
+  height: 18px;
+}
