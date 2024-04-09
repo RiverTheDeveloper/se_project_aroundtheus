@@ -4,11 +4,11 @@
 
 .header {
   border-bottom: 1px solid;
-  border-color: #545454;
+  border-color: rgba(84, 84, 84, 0.7);
   opacity: 70%;
   margin-bottom: 40px;
-  gap: 0px;
 }
+
 .header__logo {
   margin-bottom: 41px;
 }
