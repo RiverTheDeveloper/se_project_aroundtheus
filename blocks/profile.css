@@ -87,4 +87,8 @@
     margin: 0;
     width: 100%;
   }
+
+  .profile__add-button {
+    max-width: 282px;
+  }
 }
