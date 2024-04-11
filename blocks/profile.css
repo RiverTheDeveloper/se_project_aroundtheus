@@ -10,8 +10,6 @@
     "description descripton";
   grid-template-columns: minmax(auto, 373px) auto;
   width: 415px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .profile__edit-button {
@@ -58,8 +56,6 @@
 .profile__image {
   width: 120px;
   height: 120px;
-  gap: 0px;
-  opacity: 0px;
   border-radius: 50%;
   object-fit: cover;
   background-position: center;
@@ -81,6 +77,7 @@
   .profile__description {
     width: 100%;
     text-align: center;
+    margin: 0;
   }
 
   .profile__add-button {
