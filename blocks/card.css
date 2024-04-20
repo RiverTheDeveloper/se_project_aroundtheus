@@ -16,6 +16,7 @@
   padding: 0;
   list-style-type: none;
   margin-top: 51px;
+  margin-bottom: 0;
 }
 
 .card__image {
@@ -61,4 +62,10 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 219px;
+}
+
+@media screen and (max-width: 480px) {
+  .cards__list {
+    margin-top: 36px;
+  }
 }
