@@ -19,7 +19,6 @@
   grid-area: button;
   border: 1px;
   border-color: #ffffff;
-  padding: 18px;
 }
 
 .profile__edit-button:hover {
@@ -35,6 +34,7 @@
   border-color: #ffffff;
   border-radius: 2px;
   min-width: 150px;
+  padding: 0;
 }
 
 .profile__add-button:hover {
@@ -55,7 +55,8 @@
   overflow: hidden;
   min-width: 373px;
   height: 39px;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
+  padding-right: 18px;
 }
 
 .profile__description {
@@ -93,6 +94,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    padding-top: 30px;
   }
 
   .profile__description {
@@ -119,17 +121,14 @@
     text-align: center;
     min-width: 126px;
     height: 22px;
-    margin-bottom: 14px;
+    padding-bottom: 14px;
+    padding-right: 10px;
   }
 
   .profile__edit-button {
-    background: transparent url(../images/Edit\ Button.svg) center no-repeat;
     width: 18px;
     height: 18px;
-    grid-area: button;
     border: 1px;
-    border-color: #ffffff;
-    padding-top: 0;
   }
   .profile__image {
     width: 120px;
