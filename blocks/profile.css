@@ -10,7 +10,6 @@
     "description descripton";
   grid-template-columns: minmax(auto, 373px) auto;
   width: 415px;
-  height: 77px;
 }
 
 .profile__edit-button {
@@ -25,7 +24,7 @@
 
 .profile__edit-button:hover {
   cursor: pointer;
-  opacity: 50%;
+  opacity: 60%;
 }
 
 .profile__add-button {
@@ -33,7 +32,7 @@
   width: 150px;
   height: 50px;
   margin-left: auto;
-  border-color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 2px;
   min-width: 150px;
   padding: 0;
@@ -43,7 +42,7 @@
 
 .profile__add-button:hover {
   cursor: pointer;
-  opacity: 50%;
+  opacity: 60%;
 }
 
 .profile__title {
@@ -56,7 +55,6 @@
   font-family: Inter, sans-serif;
   text-overflow: ellipsis;
   white-space: nowrap;
-
   max-width: 373px;
   height: 39px;
   padding-bottom: 16px;
@@ -106,8 +104,8 @@
     margin: 0;
     padding-bottom: 36px;
     width: 282px;
-    height: 14px;
     font-size: 14px;
+    line-height: 16.94px;
   }
 
   .profile__add-button {
@@ -117,15 +115,14 @@
   }
 
   .profile__title {
-    font-family: Inter;
     font-size: 22px;
     font-weight: 500;
     line-height: 26.63px;
     text-align: center;
     min-width: 126px;
-    height: 22px;
-    padding-bottom: 14px;
+    padding-bottom: 0;
     padding-right: 10px;
+    height: 22px;
   }
 
   .profile__edit-button {
@@ -133,6 +130,7 @@
     height: 18px;
     border: 1px solid #ffffff;
     margin-top: 4px;
+    margin-left: 0;
   }
   .profile__image {
     width: 120px;

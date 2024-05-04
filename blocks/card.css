@@ -4,21 +4,6 @@
   border-radius: 10px 10px 0 0;
 }
 
-.cards {
-  margin-top: 30px;
-}
-
-.cards__list {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, 282px);
-  grid-gap: 20px 17px;
-  padding: 0;
-  list-style-type: none;
-  margin-top: 51px;
-  margin-bottom: 0;
-}
-
 .card__image {
   width: 282px;
   height: 282px;
@@ -62,10 +47,4 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 219px;
-}
-
-@media screen and (max-width: 480px) {
-  .cards__list {
-    margin-top: 36px;
-  }
 }
