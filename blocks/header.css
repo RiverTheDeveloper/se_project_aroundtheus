@@ -18,15 +18,14 @@
     padding: 0;
     margin: 0;
     padding-bottom: 32px;
-
+    padding-left: 9px;
     max-width: 126px;
     height: 24px;
   }
 
   .header {
     margin-top: 28px;
-    margin-left: 27px;
-    padding-left: 11px;
+
     height: 56px;
   }
 }

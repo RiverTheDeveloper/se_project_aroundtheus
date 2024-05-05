@@ -9,7 +9,7 @@
     "title button"
     "description descripton";
   grid-template-columns: minmax(auto, 373px) auto;
-  width: 415px;
+  max-width: 415px;
 }
 
 .profile__edit-button {
