@@ -56,8 +56,8 @@
   font-family: Inter, sans-serif;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
   max-width: 373px;
-  height: 39px;
   padding-bottom: 16px;
 }
 
@@ -73,7 +73,6 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 415px;
-  height: 22px;
 }
 
 .profile__image {
@@ -122,12 +121,12 @@
     min-width: 126px;
     padding-bottom: 0;
     padding-right: 10px;
+    max-width: 198px;
   }
 
   .profile__edit-button {
     width: 18px;
     height: 18px;
-    border: 1px solid #ffffff;
     margin-top: 4px;
     margin-left: 0;
   }
