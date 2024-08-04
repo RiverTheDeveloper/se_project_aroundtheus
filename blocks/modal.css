@@ -52,9 +52,14 @@
 }
 
 .modal__form {
-  width: 358px;
 }
 
 .modal__button {
   width: 358px;
+  padding: 0;
+}
+
+.modal__input {
+  width: 355px;
+  padding: 0;
 }
