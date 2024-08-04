@@ -26,6 +26,7 @@
   border-radius: 10px;
   width: 430px;
   height: 330px;
+  box-sizing: border-box;
 }
 
 .modal__heading {
@@ -34,6 +35,7 @@
   font-size: 24px;
   font-weight: 900;
   padding-bottom: 54px;
+  margin: 0;
 }
 
 .modal__close {
@@ -57,9 +59,26 @@
 .modal__button {
   width: 358px;
   padding: 0;
+  height: 50px;
+  margin-top: 19px;
+  color: #fff;
+  background-color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+
+  text-align: center;
 }
 
 .modal__input {
-  width: 355px;
+  width: 358px;
+  height: 27px;
   padding: 0;
+  margin-bottom: 29px;
+  box-sizing: border-box;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border: 1px solid #000000;
 }
