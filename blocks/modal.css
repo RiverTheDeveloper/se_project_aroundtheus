@@ -66,7 +66,7 @@
   font-family: Inter;
   font-size: 18px;
   font-weight: 400;
-
+  cursor: pointer;
   text-align: center;
 }
 
@@ -76,9 +76,45 @@
   padding: 0;
   margin-bottom: 29px;
   box-sizing: border-box;
-
+  border: 1px solid #000000;
   border-top: none;
   border-left: none;
   border-right: none;
-  border: 1px solid #000000;
+  opacity: 20%;
+}
+
+@media screen and (max-width: 550px) {
+  .modal__container {
+    width: 282px;
+    height: 322px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .modal__heading {
+    width: 238px;
+    height: 22px;
+    padding-bottom: 75px;
+  }
+
+  .modal__close {
+    width: 26px;
+    height: 26px;
+    top: -50px;
+    right: 10px;
+  }
+
+  .modal__button {
+    width: 238px;
+    height: 46px;
+    margin-top: 15px;
+  }
+
+  .modal__input {
+    width: 238px;
+    height: 27px;
+    margin-bottom: 30px;
+  }
 }
