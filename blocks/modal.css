@@ -53,9 +53,6 @@
   background-color: transparent;
 }
 
-.modal__form {
-}
-
 .modal__button {
   width: 358px;
   padding: 0;
@@ -76,11 +73,10 @@
   padding: 0;
   margin-bottom: 29px;
   box-sizing: border-box;
-  border: 1px solid #000000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-top: none;
   border-left: none;
   border-right: none;
-  opacity: 20%;
 }
 
 @media screen and (max-width: 550px) {
