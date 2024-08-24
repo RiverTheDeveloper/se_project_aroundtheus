@@ -6,7 +6,6 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  /*display: flex;*/
   padding: 0 19px;
   display: none;
 }
@@ -79,6 +78,12 @@
   border-right: none;
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
+
+/* .modal__input_type_title {
+}
+
+.modal__input_type_url {
+} */
 
 @media screen and (max-width: 550px) {
   .modal__container {
