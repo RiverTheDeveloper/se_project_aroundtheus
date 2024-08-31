@@ -41,8 +41,8 @@ const profileTitleInput = document.querySelector("#profile-title-input");
 const profileDescriptionInput = document.querySelector(
   "#profile-description-input"
 );
-const cardTitleInput = addCardForm.querySelector("#image-title-input");
-const cardUrlInput = addCardForm.querySelector("#image-url-input");
+const cardTitleInput = addCardForm.querySelector(".modal__input_type_title");
+const cardUrlInput = addCardForm.querySelector(".modal__input_type_url");
 // BUTTONS-----------------------------------------------------------------------------------------------
 const profileEditBtn = document.querySelector("#profile-edit-btn");
 const profileModalCloseBtn = document.querySelector("#profile-close-btn");
@@ -90,10 +90,21 @@ function handleProfileEditSubmit(e) {
 
 function handleAddCardSubmit(e) {
   e.preventDefault();
+
+  const CardData = {
+    name: cardTitleInput.value,
+    link: cardUrlInput.value,
+  };
+
   const titleValue = cardTitleInput.value;
   const urlValue = cardUrlInput.value;
-  const cardElement = getCardElement();
+  const cardElement = getCardElement({
+    titleValue,
+    urlValue,
+  });
+  return console.log(cardElement);
   closePopUp(addNewCardModal);
+  cardListEl.prepend(CardData);
 }
 /*-------------------------------------------------------------------------------------------------------*/
 /*                                    EVENT LISTENERS                                                    */
