@@ -36,8 +36,8 @@ const previewModal = document.querySelector("#preview-modal");
 const previewModalImageEl = previewModal.querySelector(
   ".modal__picture-preview"
 );
-const previewCaption = .querySelector("#priview-caption");
 
+const previewCaption = previewModal.querySelector("#priview-caption");
 // WRAPPERS----------------------------------------------------------------------------------------------
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 const addCardForm = addNewCardModal.querySelector(".modal__form");
