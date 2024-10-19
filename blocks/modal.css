@@ -96,6 +96,8 @@
   padding: 0;
   position: relative;
   background-color: transparent;
+  height: auto;
+  width: auto;
 }
 .modal__caption {
   color: #fff;
