@@ -36,8 +36,7 @@ const previewModal = document.querySelector("#preview-modal");
 const previewModalImageEl = previewModal.querySelector(
   ".modal__picture-preview"
 );
-
-const previewImage = document.querySelector(".card__image");
+const previewCaption = .querySelector("#priview-caption");
 
 // WRAPPERS----------------------------------------------------------------------------------------------
 const profileEditForm = profileEditModal.querySelector(".modal__form");
@@ -91,6 +90,8 @@ function getCardElement(cardData) {
   cardImageEl.addEventListener("click", () => {
     openModal(previewModal);
     previewModalImageEl.src = cardData.link;
+    previewModalImageEl.alt = cardData.name;
+    previewCaption.textContent = cardData.name;
   });
 
   cardTitleEl.textContent = cardData.name;
