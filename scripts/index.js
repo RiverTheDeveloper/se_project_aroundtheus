@@ -31,6 +31,14 @@ const initialCards = [
 // MODALS------------------------------------------------------------------------------------------------
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const addNewCardModal = document.querySelector("#profile-image-modal");
+// SELECT MODALS-----------------------------------------------------------------------------------------
+const previewModal = document.querySelector("#preview-modal");
+const previewModalImageEl = previewModal.querySelector(
+  ".modal__picture-preview"
+);
+
+const previewImage = document.querySelector(".card__image");
+
 // WRAPPERS----------------------------------------------------------------------------------------------
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 const addCardForm = addNewCardModal.querySelector(".modal__form");
@@ -50,6 +58,7 @@ const profileTitle = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__description");
 const addNewCardButton = document.querySelector("#profile-add-button");
 const profileImageCloseBtn = document.querySelector("#profile-image-close-btn");
+
 //-------------------------------------------------------------------------------------------------------
 const cardTemplate =
   document.querySelector("#template-card").content.firstElementChild;
@@ -57,11 +66,11 @@ const cardTemplate =
 /*                             FUNCTIONS AKA FORM DATA                                                   */
 /*-------------------------------------------------------------------------------------------------------*/
 function closePopUp(modal) {
-  modal.classList.remove("modal_opened");
+  modal.classList.remove("modal__opened");
 }
 
 function openModal(modal) {
-  modal.classList.add("modal_opened");
+  modal.classList.add("modal__opened");
 }
 
 function getCardElement(cardData) {
@@ -69,10 +78,21 @@ function getCardElement(cardData) {
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__text");
   const likebutton = cardElement.querySelector(".card__like-button");
+  const deleteButton = cardElement.querySelector(".card__delete-button");
+
+  deleteButton.addEventListener("click", () => {
+    cardElement.remove();
+  });
 
   likebutton.addEventListener("click", () => {
     likebutton.classList.toggle("card__like-button_active");
   });
+
+  cardImageEl.addEventListener("click", () => {
+    openModal(previewModal);
+    previewModalImageEl.src = cardData.link;
+  });
+
   cardTitleEl.textContent = cardData.name;
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
@@ -90,8 +110,7 @@ function handleProfileEditSubmit(e) {
 
 function handleAddCardSubmit(e) {
   e.preventDefault();
-
-  const CardData = {
+  const cardData = {
     name: cardTitleInput.value,
     link: cardUrlInput.value,
   };
@@ -99,13 +118,14 @@ function handleAddCardSubmit(e) {
   const titleValue = cardTitleInput.value;
   const urlValue = cardUrlInput.value;
   const cardElement = getCardElement({
-    titleValue,
-    urlValue,
+    name: titleValue,
+    link: urlValue,
   });
-  return console.log(cardElement);
+
+  cardListEl.prepend(cardElement);
   closePopUp(addNewCardModal);
-  cardListEl.prepend(CardData);
 }
+
 /*-------------------------------------------------------------------------------------------------------*/
 /*                                    EVENT LISTENERS                                                    */
 /*-------------------------------------------------------------------------------------------------------*/
@@ -127,6 +147,7 @@ addNewCardButton.addEventListener("click", () => {
 profileImageCloseBtn.addEventListener("click", () =>
   closePopUp(addNewCardModal)
 );
+
 /*-------------------------------------------------------------------------------------------------------*/
 /*                          "forEach" LOOPS FOR INSERTING CARDS                                          */
 /*-------------------------------------------------------------------------------------------------------*/
