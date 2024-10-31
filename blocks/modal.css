@@ -14,7 +14,7 @@
   transition: visibility 0.3s, opacity 0.5s ease;
 }
 
-.modal__opened {
+.modal_opened {
   display: flex;
   opacity: 1;
   visibility: visible;
@@ -165,6 +165,7 @@
     width: 238px;
     height: 46px;
     margin-top: 15px;
+    font-size: 14pxS;
   }
 
   .modal__input {

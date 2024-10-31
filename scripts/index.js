@@ -65,11 +65,11 @@ const cardTemplate =
 /*                             FUNCTIONS AKA FORM DATA                                                   */
 /*-------------------------------------------------------------------------------------------------------*/
 function closePopUp(modal) {
-  modal.classList.remove("modal__opened");
+  modal.classList.remove("modal_opened");
 }
 
 function openModal(modal) {
-  modal.classList.add("modal__opened");
+  modal.classList.add("modal_opened");
 }
 
 function getCardElement(cardData) {
@@ -157,7 +157,7 @@ initialCards.forEach((cardData) => {
   cardListEl.prepend(cardElement);
 });
 
-const closeButton = document.querySelectorAll(".modal__close_btn");
+const closeButton = document.querySelectorAll(".modal__close");
 closeButton.forEach((button) => {
   const popUp = button.closest(".modal");
   button.addEventListener("click", () => closePopUp(popUp));
