@@ -156,3 +156,9 @@ initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);
   cardListEl.prepend(cardElement);
 });
+
+const closeButton = document.querySelectorAll(".modal__close_btn");
+closeButton.forEach((button) => {
+  const popUp = button.closest(".modal");
+  button.addEventListener("click", () => closePopUp(popUp));
+});

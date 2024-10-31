@@ -49,6 +49,7 @@
   height: 20px;
   border: none;
   position: absolute;
+  cursor: pointer;
 }
 
 .card__text {
