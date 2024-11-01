@@ -50,6 +50,7 @@ const profileDescriptionInput = document.querySelector(
 );
 const cardTitleInput = addCardForm.querySelector(".modal__input_type_title");
 const cardUrlInput = addCardForm.querySelector(".modal__input_type_url");
+
 // BUTTONS-----------------------------------------------------------------------------------------------
 const profileEditBtn = document.querySelector("#profile-edit-btn");
 const profileModalCloseBtn = document.querySelector("#profile-close-btn");
