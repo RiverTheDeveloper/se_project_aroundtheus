@@ -117,12 +117,6 @@
   width: 290px;
 }
 
-/* .modal__input_type_title {
-}
-
-.modal__input_type_url {
-} */
-
 @media screen and (max-width: 550px) {
   .modal__container {
     width: 282px;
@@ -165,7 +159,7 @@
     width: 238px;
     height: 46px;
     margin-top: 15px;
-    font-size: 14pxS;
+    font-size: 14px;
   }
 
   .modal__input {

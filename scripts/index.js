@@ -158,8 +158,8 @@ initialCards.forEach((cardData) => {
   cardListEl.prepend(cardElement);
 });
 
-const closeButton = document.querySelectorAll(".modal__close");
-closeButton.forEach((button) => {
+const closeButtons = document.querySelectorAll(".modal__close");
+closeButtons.forEach((button) => {
   const popUp = button.closest(".modal");
   button.addEventListener("click", () => closePopUp(popUp));
 });
