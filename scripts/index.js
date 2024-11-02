@@ -107,11 +107,15 @@ function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileTitle.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
+  profileTitleInput.value = "";
+  profileDescriptionInput.value = "";
   closePopUp(profileEditModal);
 }
 
 function handleAddCardSubmit(e) {
   e.preventDefault();
+  cardTitleInput.value = "";
+  cardUrlInput.value = "";
   const cardData = {
     name: cardTitleInput.value,
     link: cardUrlInput.value,
