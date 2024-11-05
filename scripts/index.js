@@ -107,7 +107,8 @@ function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileTitle.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
-
+  profileTitleInput.value = "";
+  profileDescriptionInput.value = "";
   closePopUp(profileEditModal);
 }
 function handleAddCardSubmit(e) {
@@ -116,6 +117,7 @@ function handleAddCardSubmit(e) {
     name: cardTitleInput.value,
     link: cardUrlInput.value,
   };
+
   const titleValue = cardTitleInput.value;
   const urlValue = cardUrlInput.value;
   const cardElement = getCardElement({
@@ -124,6 +126,9 @@ function handleAddCardSubmit(e) {
   });
 
   cardListEl.prepend(cardElement);
+  // reset input
+  cardTitleInput.value = "";
+  cardUrlInput.value = "";
   closePopUp(addNewCardModal);
 }
 /*-------------------------------------------------------------------------------------------------------*/
