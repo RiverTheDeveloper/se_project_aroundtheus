@@ -120,10 +120,7 @@ function handleAddCardSubmit(e) {
 
   const titleValue = cardTitleInput.value;
   const urlValue = cardUrlInput.value;
-  const cardElement = getCardElement({
-    name: titleValue,
-    link: urlValue,
-  });
+  const cardElement = getCardElement(cardData);
 
   cardListEl.prepend(cardElement);
   // reset input
@@ -136,9 +133,6 @@ function handleAddCardSubmit(e) {
 /*-------------------------------------------------------------------------------------------------------*/
 // EDIT MODAL--------------------------------------------------------------------------------------------
 
-profileModalCloseBtn.addEventListener("click", () =>
-  closePopUp(profileEditModal)
-);
 profileEditBtn.addEventListener("click", () => openModal(profileEditModal));
 // form listeners----------------------------------------------------------------------------------------
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
@@ -149,9 +143,7 @@ addNewCardButton.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
 });
-profileImageCloseBtn.addEventListener("click", () =>
-  closePopUp(addNewCardModal)
-);
+//
 
 /*-------------------------------------------------------------------------------------------------------*/
 /*                          "forEach" LOOPS FOR INSERTING CARDS                                          */
